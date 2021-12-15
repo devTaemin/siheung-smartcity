@@ -251,7 +251,7 @@ export default ({
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-weight: 800;
     }
 
