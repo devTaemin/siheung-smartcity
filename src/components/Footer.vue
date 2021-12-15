@@ -30,7 +30,7 @@ export default ({
     padding: 50px;
     font-size: 1rem;
     font-weight: 700;
-    background-color: #212121;
+    background-color: black;
     color: white;
     line-height: 150%;
 }

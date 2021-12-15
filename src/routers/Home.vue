@@ -3,7 +3,7 @@
         <div class="home-main">
             <div class="home-main__content">
                 <div class="home-main__content-title">SIHEUNG SMART CITY</div>
-                <div class="home-main__content-subtitle">미래를 키우는 생명도시, 시흥스마트시티</div>
+                <div class="home-main__content-subtitle">미래를 키우는 생명도시 &nbsp; 시흥스마트시티</div>
             </div>  
         </div>
 
@@ -70,8 +70,7 @@ export default ({
 </script>
 
 
-<style scoped>
-
+<style>
 .home-main {
     width: 100%;
     height: 60vh;
@@ -105,6 +104,7 @@ export default ({
     font-weight: 600;
     padding: 5px;
     opacity: 0.5;
+    margin-top: 20px;
 }
 
 .home-description {
@@ -168,7 +168,7 @@ export default ({
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 200%;
-    margin-top: 50px;
+    margin-top: 100px;
     opacity: 0.8;
 }
 
@@ -200,7 +200,7 @@ export default ({
     margin: 100px 20px;
     box-sizing: border-box;
     width: 250px;
-    height: 400px;
+    height: 450px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -209,17 +209,31 @@ export default ({
     background-color: #2D393B;
 }
 
+.home-more__content-card:nth-child(1) .home-more__content-card-img {
+    background-image: url('../assets/img/main-future.png');
+}
+
+.home-more__content-card:nth-child(2) .home-more__content-card-img {
+    background-image: url('../assets/img/main-strategy.png');
+}
+
+.home-more__content-card:nth-child(3) .home-more__content-card-img {
+    background-image: url('../assets/img/main-service.png');
+}
+
+.home-more__content-card:nth-child(4) .home-more__content-card-img {
+    background-image: url('../assets/img/main-partners.png');
+}
+
 .home-more__content-card-img {
     box-sizing: border-box;
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     border-radius: 30px;
     margin: 5px auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    border: solid red;
 }
 
 .home-more__content-card-description {
@@ -232,12 +246,13 @@ export default ({
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .home-more__content-card-description span{
     font-size: 1.4rem;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .home-more__content-card-go {
@@ -251,7 +266,6 @@ export default ({
     align-items: center;
     font-size: 1.6rem;
     font-weight: 800;
-    padding-top: 10px;
     background-color: #9F9B97;
     color: black;
 }
