@@ -14,7 +14,7 @@
                 <div class="testbed-content__column-description">
                     라이더 스캐닝을 이용한 <br> 미세먼지 모니터링 시스템
                 </div>
-                <div class="testbed-content__column-go">GO</div>
+                <button class="testbed-content__column-go" v-on:click='open_in_frame("`/maps/environment.html`")'>GO</button>
             </div>
             <div class="testbed-content__column">
                 <div class="testbed-content__column-img">
@@ -56,23 +56,39 @@
                 </div>
                 <div class="testbed-content__column-go">GO</div>
             </div>
-            
         </div>
+
+        <iframe id="map_frame"
+        ></iframe>
     </div>
 </template>
 
 
 <script>
+import $ from 'jquery'
+
 export default ({
     name: 'Testbeds',
     component: {
 
+    },
+    methods: {
+        open_in_frame(url){
+            $('#my_frame').attr('src', url);
+            console.log(url);
+        }
     }
+
 })
 </script>
 
 
 <style scoped>
+#map_frame {
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+}
 .testbed {
     width: 100%;
     height: 100vh;
